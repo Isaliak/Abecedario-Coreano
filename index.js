@@ -20,10 +20,10 @@ console.log(
     abecedariotexto.textContent
 
 )
-// console.log(letra)
 
-//detectar cuando una tecla es precionada
+//arreglo para insertar teclas presionadas
 let mapeoteclas = []
+//detectar cuando una tecla es precionada
 respuesta.addEventListener('keyup', (event) => {
 
 
