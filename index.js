@@ -24,13 +24,13 @@ console.log(
 
 //detectar cuando una tecla es precionada
 let mapeoteclas = []
-respuesta.addEventListener('keydown', (event) => {
+respuesta.addEventListener('keyup', (event) => {
 
 
     mapeoteclas.push(event.key)
     let teclapresionada = mapeoteclas.join('').toString().trim()
     console.log(teclapresionada)
-    respuesta.value = ''
+    // respuesta.value = ''
     let letra = abecedariotexto.textContent.toString().trim()
 
 
