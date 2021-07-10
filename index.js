@@ -5,6 +5,15 @@ const respuesta = document.getElementById('respuesta')
 const sumarpuntos = document.getElementById('sumar-puntos')
 const restarpuntos = document.getElementById('restar-puntos')
 
+// let vowels = [
+//     ['ㅏ','a'],
+//     ['ㅓ', 'o+'],
+//     ['ㅗ', 'o'],
+//     ['ㅜ', 'u'],
+//     ['ㅡ', 'u-'],
+//     ['ㅣ', 'i']
+// ]
+
 //funcion para obtener letras aleatorias del abecedario
 function randomAbecedario() {
     if (abecedario === '') {
