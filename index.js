@@ -29,16 +29,26 @@ console.log(
     abecedariotexto.textContent
 
 )
-// console.log(letra)
 
-//detectar cuando una tecla es precionada
+//arreglo para insertar teclas presionadas
 let mapeoteclas = []
-respuesta.addEventListener('keydown', (event) => {
+//detectar cuando una tecla es precionada
+respuesta.addEventListener('keyup', (event) => {
+
+
     mapeoteclas.push(event.key)
     let teclapresionada = mapeoteclas.join('').toString().trim()
     console.log(teclapresionada)
-    respuesta.value = ''
+    // respuesta.value = ''
     let letra = abecedariotexto.textContent.toString().trim()
+
+
+    console.log(teclapresionada.length, letra.length)
+
+    if (teclapresionada.length < letra.length) {
+        console.log('esperar')
+        return null
+    }
     console.log(teclapresionada)
     if (teclapresionada === letra) {
         console.log('ganaste un punto')
